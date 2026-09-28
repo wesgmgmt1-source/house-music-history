@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>House Music History | Songs and Albums</title>
-    <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
   <!-- Header: page title -->
   <header>
     <h1>Songs and Albums That Shaped House</h1>
-    <p>The records that took house from Chicago to the world</p>
+    <p class="tagline">The records that took house from Chicago to the world</p>
   </header>
 
   <!-- Main: the core content of page 2 -->
   <main>
     <!-- Section 1: timeline of how house spread -->
-    <section>
+    <section id="timeline" class="card">
       <h2>How House Spread</h2>
       <p>House grew from a few Chicago clubs into a global genre in about a decade.</p>
       <!-- Ordered list: events in time order -->
@@ -29,28 +29,31 @@
       </ol>
     </section>
 
-    <!-- Section 2: key songs -->
-    <section>
-      <h2>Key Songs</h2>
-      <p>These tracks helped define the early Chicago sound:</p>
-      <ul>
-        <li>"Your Love" by Frankie Knuckles and Jamie Principle</li>
-        <li>"Move Your Body" by Marshall Jefferson (1986)</li>
-        <li>"Can You Feel It" by Mr. Fingers (1986)</li>
-        <li>"Jack Your Body" by Steve "Silk" Hurley (1986)</li>
-      </ul>
-    </section>
+    <!-- Flex container: holds the songs and albums sections side by side -->
+    <div class="music-row">
+      <!-- Section 2: key songs -->
+      <section id="songs" class="card">
+        <h2>Key Songs</h2>
+        <p>These tracks helped define the early Chicago sound:</p>
+        <ul>
+          <li>"Your Love" by Frankie Knuckles and Jamie Principle</li>
+          <li>"Move Your Body" by Marshall Jefferson (1986)</li>
+          <li>"Can You Feel It" by Mr. Fingers (1986)</li>
+          <li>"Jack Your Body" by Steve "Silk" Hurley (1986)</li>
+        </ul>
+      </section>
 
-    <!-- Section 3: key albums -->
-    <section>
-      <h2>Key Albums</h2>
-      <p>These albums carried house to bigger audiences:</p>
-      <ul>
-        <li><em>Another Side</em> by Fingers Inc. (1988)</li>
-        <li><em>Homework</em> by Daft Punk (1997)</li>
-        <li><em>Remedy</em> by Basement Jaxx (1999)</li>
-      </ul>
-    </section>
+      <!-- Section 3: key albums -->
+      <section id="albums" class="card">
+        <h2>Key Albums</h2>
+        <p>These albums carried house to bigger audiences:</p>
+        <ul>
+          <li><em>Another Side</em> by Fingers Inc. (1988)</li>
+          <li><em>Homework</em> by Daft Punk (1997)</li>
+          <li><em>Remedy</em> by Basement Jaxx (1999)</li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <!-- Footer: internal link back to the home page -->

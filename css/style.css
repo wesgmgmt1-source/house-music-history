@@ -49,3 +49,60 @@ footer a {
   color: #fff;
   font-weight: bold;
 }
+
+/* ===== Classes: reusable styles used on multiple elements ===== */
+
+/* .card: white boxes that visually separate each section */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .tagline: centered, italic subtitle under each page title */
+.tagline {
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* ===== IDs: styles for one specific section each ===== */
+
+/* #origins: red left border marks where the story starts */
+#origins {
+  border-left: 6px solid #e63946;
+}
+
+/* #sound: warm cream background to set it apart from the first section */
+#sound {
+  background-color: #fff8e7;
+}
+
+/* #timeline: dark left border to match the header */
+#timeline {
+  border-left: 6px solid #111;
+}
+
+/* #songs and #albums: different colored top borders */
+#songs {
+  border-top: 6px solid #e63946;
+}
+
+#albums {
+  border-top: 6px solid #111;
+}
+
+/* ===== Flexbox: songs and albums side by side on page 2 ===== */
+
+/* .music-row: flex container that puts its sections in a row with space between */
+.music-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Each section in the row takes up an equal share of the width */
+.music-row .card {
+  flex: 1;
+}
