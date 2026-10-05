@@ -39,7 +39,7 @@ p {
 
 /* Footer: red bar so it looks different from the dark header */
 footer {
-  background-color: #e63946;
+  background-color: #b51e2b;
   text-align: center;
   padding: 20px;
 }
@@ -105,45 +105,4 @@ footer a {
 /* Each section in the row takes up an equal share of the width */
 .music-row .card {
   flex: 1;
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  header {
-    padding: 24px 16px;
-  }
-
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  h2 {
-    font-size: 1.35rem;
-  }
-
-  main {
-    padding: 16px;
-  }
-
-  .card {
-    padding: 16px;
-    margin-bottom: 16px;
-  }
-
-  .music-row {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  footer {
-    padding: 16px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
