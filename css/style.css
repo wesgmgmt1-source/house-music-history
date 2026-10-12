@@ -7,41 +7,28 @@ body {
   font-size: 18px;
   line-height: 1.6;
   color: #222;
-  margin: 0;
 }
 
-/* Header: dark bar with centered text */
+/* Header: dark bar with white text */
 header {
   background-color: #111;
   color: #fff;
-  text-align: center;
-  padding: 30px 20px;
 }
 
-/* Main: centered content with a max width so lines aren't too long */
-main {
+/* Main: max width so lines aren't too long */
+main.container {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
-/* Headings: centered with a serif font */
+/* Headings: serif font */
 h1,
 h2 {
   font-family: Georgia, "Times New Roman", serif;
-  text-align: center;
-}
-
-/* Paragraphs: left-aligned for easy reading */
-p {
-  text-align: left;
 }
 
 /* Footer: red bar so it looks different from the dark header */
 footer {
   background-color: #b51e2b;
-  text-align: center;
-  padding: 20px;
 }
 
 /* Footer links: bold white text */
@@ -50,20 +37,28 @@ footer a {
   font-weight: bold;
 }
 
+/* Footer button: dark with a white outline so it stands out on red */
+.btn-dark {
+  background-color: #111;
+  border-color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+  border-color: #fff;
+}
+
 /* ===== Classes: reusable styles used on multiple elements ===== */
 
 /* .card: white boxes that visually separate each section */
 .card {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* .tagline: centered, italic subtitle under each page title */
+/* .tagline: italic subtitle under each page title */
 .tagline {
-  text-align: center;
   font-style: italic;
   color: #ccc;
 }
@@ -92,17 +87,4 @@ footer a {
 
 #albums {
   border-top: 6px solid #111;
-}
-
-/* ===== Flexbox: songs and albums side by side on page 2 ===== */
-
-/* .music-row: flex container that puts its sections in a row with space between */
-.music-row {
-  display: flex;
-  gap: 20px;
-}
-
-/* Each section in the row takes up an equal share of the width */
-.music-row .card {
-  flex: 1;
 }
