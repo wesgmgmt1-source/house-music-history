@@ -88,3 +88,27 @@ footer a {
 #albums {
   border-top: 6px solid #111;
 }
+/* ===== Flexbox layout for songs and albums ===== */
+.music-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.music-row .card {
+  flex: 1;
+}
+
+/* ===== Responsive: stack cards and shrink text on small screens ===== */
+@media (max-width: 768px) {
+  .music-row {
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}
